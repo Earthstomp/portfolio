@@ -16,24 +16,12 @@ export const metadata = {
     'web development, web design, javascript, react, node, vue, html, css, java, django, typescript'
 }
 
-// export default function RootLayout({
-//   children,
-// }: {
-//   children: React.ReactNode
-// }) {
-//   return (
-//     <html lang="en">
-//       <body className={inter.className}>{children}</body>
-//     </html>
-//   )
-// }
-
 export default function RootLayout({ children }: any) {
   return (
     <div>
       <body className={poppins.className}>
         <Header />
-        <main className='container'>{children}</main>
+        <main className='px-8'>{children}</main>
       </body>
     </div>
   )

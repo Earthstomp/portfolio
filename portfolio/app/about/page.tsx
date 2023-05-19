@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <section className="bg-blue-700">
         <nav className="pt-10">
-          <h1>Developed by Keith</h1>
+          <h1>Developed by Keith!</h1>
         </nav>
       </section>
     </main>
