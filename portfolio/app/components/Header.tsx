@@ -5,8 +5,11 @@ const Header = () => {
         <header className="header">
             <main className="px-8">
                 <div>
-                    <nav className="py-10 mb-12 flex justify-between dark:text-white">
-                        <h1 className="text-xl">keithbuilds</h1>
+                    <nav className="py-14 mb-12 flex justify-between dark:text-white">
+                        <h1 className="text-xl">
+                            <Link href="/">keithbuilds</Link>
+                        </h1>
+
                         <ul className="flex items-center sm:text-sm md:text-base lg:text-xl">
                             <li className="px-2 hover:text-cyan-500 transition duration-500">
                                 <Link href="/projects">Projects</Link>
