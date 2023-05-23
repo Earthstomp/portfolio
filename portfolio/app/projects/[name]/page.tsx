@@ -4,6 +4,7 @@ import RepoCard from "../../components/RepoCard";
 
 const ProjectPage = ({ params: { name } }: any) => {
 
+    // how do we be sure that this is defined? 
     const project = projectDetailData.find(obj => obj.id === name);
     const github = project?.github;
 
@@ -20,8 +21,8 @@ const ProjectPage = ({ params: { name } }: any) => {
                     }</span>
 
                 </div>
-                <div className="sm: w-full md:w-5/6 lg:w-5/6">
-                    <RepoCard name={github} />
+                <div className="sm:w-full md:w-5/6 lg:w-5/6">
+                    <RepoCard repoName={github} />
                 </div>
             </div>
 

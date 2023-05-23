@@ -15,7 +15,7 @@ type RepoCardProps = {
     link: string,
 }
 
-async function getServerSideProps(name: string): Promise<RepoCardProps> {
+async function getStaticProps(name: string | undefined): Promise<RepoCardProps> {
     const response = await fetch(
         `https://api.github.com/repos/Earthstomp/${name}`,
         {
@@ -24,12 +24,12 @@ async function getServerSideProps(name: string): Promise<RepoCardProps> {
             },
         }
     );
-    const repo = await response.json();
+    const repo: RepoCardProps = await response.json();
     return repo;
 }
 
-async function Repo({ name }: { name: string }) {
-    const repo = await getServerSideProps(name);
+async function RepoCard({ repoName }: { repoName: string | undefined }) {
+    const repo: RepoCardProps = await getStaticProps(repoName);
 
     return (
         <div className="my-8 p-4 rounded bg-white  hover:translate-y-2 transition duration-200">
@@ -51,4 +51,4 @@ async function Repo({ name }: { name: string }) {
         </div>
     );
 };
-export default Repo;
+export default RepoCard;

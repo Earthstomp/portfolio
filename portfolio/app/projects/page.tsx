@@ -8,9 +8,9 @@ const ProjectPage = () => {
                 Projects
             </div>
 
-            <div className="pt-8 sm:grid-cols-1 md:grid-cols-2">
+            <div className="pt-8 grid sm:grid-cols-1 md:grid-cols-2">
                 {projectDetailData.map(project =>
-                    <ProjectCard />
+                    <ProjectCard project={project} />
                 )}
             </div>
         </>
