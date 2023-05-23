@@ -12,7 +12,7 @@ type Project = {
 
 const ProjectCard = ({ project }: { project: Project }) => {
     return (
-        <div className="py-8">
+        <div>
             <div className="sm:text-sm md:text-md lg:text-lg uppercase font-semibold text-gray-500">
                 {project.label}
             </div>
