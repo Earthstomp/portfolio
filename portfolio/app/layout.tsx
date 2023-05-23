@@ -23,9 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={poppins.className}>
         <Header />
-        <main className='px-8'>
-          <div className={poppins.className}>
-          </div>
+        <main className='px-16 text-gray-200'>
           {children}
         </main>
       </body>

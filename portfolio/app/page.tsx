@@ -2,7 +2,7 @@ import { Poppins } from 'next/font/google'
 import Image from 'next/image'
 import Link from "next/link";
 
-const open_sans = Poppins({
+const poppins = Poppins({
   weight: ['400', '700'],
   subsets: ['latin'],
 })
@@ -16,8 +16,8 @@ const Home = async () => {
   await delay();
   return (
     <main>
-      <section className={open_sans.className}>
-        <div className="sm:text-3xl md:text-4xl lg:text-5xl">
+      <section>
+        <div className="font-bold sm:text-3xl md:text-4xl lg:text-5xl">
           I'm Keith, a passionate developer and aspiring entrepreneur
         </div>
         <div className="py-8">
