@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/Earthstomp/portfolio/compare/v0.1.5...v0.1.6) (2023-05-23)
+
+
+### Features
+
+* add database with dynamic link to project page ([724cb89](https://github.com/Earthstomp/portfolio/commit/724cb898ba6a562ca262d1cfcb2a9f4ad3500a66))
+* add repo card ([2f1715c](https://github.com/Earthstomp/portfolio/commit/2f1715c1c8ccadcb8223703d4d14ef758bda52f9))
+
 ### [0.1.5](https://github.com/Earthstomp/portfolio/compare/v0.1.4...v0.1.5) (2023-05-19)
 
 
