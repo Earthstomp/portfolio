@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/Earthstomp/portfolio/compare/v0.1.6...v0.1.7) (2023-05-25)
+
+
+### Features
+
+* add project cards on homepage and nav links ([fb61cfb](https://github.com/Earthstomp/portfolio/commit/fb61cfbc0c6721c93a51540ff5a872a29c46fdb6))
+* create basic footer ([0f3fa3c](https://github.com/Earthstomp/portfolio/commit/0f3fa3c0e73f3ea15bc23a2cc3e3e477598653d6))
+* create basic projects page with routing ([d9c180a](https://github.com/Earthstomp/portfolio/commit/d9c180a2f312dc452d379d1b09dae3a3e5e5b7fd))
+* home gradient and images for dropandgo project ([bc3113c](https://github.com/Earthstomp/portfolio/commit/bc3113c8dca9aa1ac04690ebbddad0e5b45aa654))
+
 ### [0.1.6](https://github.com/Earthstomp/portfolio/compare/v0.1.5...v0.1.6) (2023-05-23)
 
 
