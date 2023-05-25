@@ -1,19 +1,25 @@
 import Link from "next/link"
 
-const Header = () => {
+const Footer = () => {
     return (
-        <header className="header">
+        <header className="flex justify-evenly text-gray-500">
             <div className="">
-                <div className="flex justify-center">
-                    <Link href="/">Keith Ong</Link>
+
+                <div>
+                    Social
                 </div>
-                <div className="flex justify-around">
-                    <Link href="/about">About</Link>
-                    <Link href="/projects">Projects</Link>
+
+                <div>
+                    Location
                 </div>
+
+                <div>
+                    Email
+                </div>
+
             </div>
         </header>
     )
 }
 
-export default Header
+export default Footer
