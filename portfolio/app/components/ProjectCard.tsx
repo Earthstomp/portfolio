@@ -22,13 +22,13 @@ const ProjectCard = ({ project }: { project: Project }) => {
             <Link href='/projects/[project.id]' as={`projects/${project.id}`} className="pt-1 sm:text-2xl md:text-3xl lg:text-4xl font-bold hover: hover-cyan">
                 {project.shortDesc}
             </Link>
-            <div className="sm:h-80 sm:w-80 md:h-96 md:w-96 lg:h-200 lg:w-200 relative rounded-full">
+            <div className="relative h-80 sm:h-[450px] lg:h-[600px] overflow-hidden">
                 <Image
                     src={imagePath}
                     alt="cannot load"
                     // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     fill
-
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
 

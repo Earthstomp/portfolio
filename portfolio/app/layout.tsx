@@ -23,8 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en">
+      <Cursor></Cursor>
       <body className={poppins.className}>
-        <Cursor></Cursor>
         <Header />
         <main className='px-16 text-gray-200'>
           {children}
