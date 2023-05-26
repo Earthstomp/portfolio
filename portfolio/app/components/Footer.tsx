@@ -7,12 +7,12 @@ const Footer = () => {
                 <div className="sm:text-xs md:text-sm lg:text-md uppercase tracking-tight">
                     Social
                     <div className="">
-                        <a className="hover:text-cyan-500 transition duration-500 font-bold sm:text-md md:text-md lg:text-xl " href="https://tinyurl.com/linkedin-keith">
+                        <a className="hover-cyan font-bold sm:text-md md:text-md lg:text-xl " href="https://tinyurl.com/linkedin-keith">
                             Linkedin
                         </a>
                         <br />
 
-                        <a className="hover:text-cyan-500 transition duration-500 font-bold sm:text-md md:text-md lg:text-xl" href="https://github.com/Earthstomp">
+                        <a className="hover-cyan font-bold sm:text-md md:text-md lg:text-xl" href="https://github.com/Earthstomp">
                             Github
                         </a>
                     </div>
@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="col-span-2 sm:text-xs md:text-sm lg:text-md uppercase tracking-tight">
                     Email
                     <div className="sm:text-md md:text-md lg:text-xl">
-                        <a className="hover:text-cyan-500 transition duration-500 font-bold" href="mailto:keithong100@gmail.com">
+                        <a className="hover-cyan font-bold" href="mailto:keithong100@gmail.com">
                             keithong100@gmail.com
                         </a>
                     </div>
@@ -31,11 +31,11 @@ const Footer = () => {
                             Location
                             <div className="font-bold sm:text-xl md:text-lg lg:text-2xl uppercase">
 
-                                <div>
+                                <div className="hover:text-red-500">
                                     1.3521° N
                                     103.82° E
                                 </div>
-                                <div className="sm:text-md md:text-lg lg:text-xl">Singapore
+                                <div className="sm:text-md md:text-lg lg:text-xl hover:text-white">Singapore
                                 </div>
                             </div>
                         </div>

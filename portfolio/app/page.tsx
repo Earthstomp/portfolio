@@ -32,7 +32,7 @@ const Home = async () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque culpa corporis unde quis recusandae quaerat ad molestiae rem fugit? Eum exercitationem facere quod similique at illo soluta, excepturi ullam non.
             </div>
             <div className="pt-4">
-              <Link className="sm:text-sm md:text-md lg:text-lg hover:text-cyan-500 transition duration-500" href="/about">More about me</Link>
+              <Link className="sm:text-sm md:text-md lg:text-lg hover-cyan" href="/about">More about me</Link>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const Home = async () => {
               )}
             </div>
             <div className="pt-4">
-              <Link className="sm:text-sm md:text-md lg:text-lg hover:text-cyan-500 transition duration-500" href="/projects">
+              <Link className="sm:text-sm md:text-md lg:text-lg hover-cyan" href="/projects">
                 View Projects
               </Link>
             </div>
