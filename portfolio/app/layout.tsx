@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Cursor from './components/Cursor'
 import React from 'react'
 
 const poppins = Poppins({
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <Cursor></Cursor>
         <Header />
         <main className='px-16 text-gray-200'>
           {children}

@@ -21,8 +21,91 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
+  cursor: none
 }
 
 .hover-cyan:hover {
   @apply text-cyan-500 transition duration-500;
 }
+
+.footer-title {
+  @apply sm:text-xs md:text-sm lg:text-base uppercase tracking-tight;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border: 3px solid cyan;
+  border-radius: 50%;
+  position: absolute;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: 11px solid white;
+  border-radius: 50%;
+  opacity: .5;
+  top: -3px;
+  left: -3px;
+  animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+/* @keyframes cursorAnim4 {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 50;
+  }
+  100% {
+      opacity: 0;
+  }
+} */
+
+.expand {
+  animation: cursorAnim3 .5s forwards;
+  border: 3px solid cyan;
+}
+
+/* .move {
+  animation: cursorAnim4 .5s forwards;
+  border: 3px solid cyan;
+} */

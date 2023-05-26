@@ -1,12 +1,20 @@
+import { NextComponentType } from "next"
 import Link from "next/link"
+import { PortfolioLinkProps } from "./PortfolioLink"
+import { PortfolioLink } from "./PortfolioLink"
 
-const Footer = () => {
+export type FooterProps = {
+    PortfolioLink: React.ComponentType<PortfolioLinkProps>
+}
+
+const Footer = ({ PortfolioLink }: FooterProps) => {
     return (
         <footer className="pt-20 px-16 text-gray-500">
             <div className="grid sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-8">
-                <div className="sm:text-xs md:text-sm lg:text-md uppercase tracking-tight">
+                <div className="footer-title">
                     Social
-                    <div className="">
+                    <div>
+                        {/* <PortfolioLink label="Linkedin" link="https://tinyurl.com/linkedin-keith" /> */}
                         <a className="hover-cyan font-bold sm:text-md md:text-md lg:text-xl " href="https://tinyurl.com/linkedin-keith">
                             Linkedin
                         </a>
@@ -17,7 +25,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div className="col-span-2 sm:text-xs md:text-sm lg:text-md uppercase tracking-tight">
+                <div className="col-span-2 footer-title">
                     Email
                     <div className="sm:text-md md:text-md lg:text-xl">
                         <a className="hover-cyan font-bold" href="mailto:keithong100@gmail.com">
@@ -27,16 +35,18 @@ const Footer = () => {
                 </div>
                 <div className="col-span-3">
                     <div className="grid grid-cols-3 sm:grid-cols-2">
-                        <div className="sm:text-xs md:text-sm lg:text-md uppercase tracking-tight">
+                        <div className="footer-title">
                             Location
-                            <div className="font-bold sm:text-xl md:text-lg lg:text-2xl uppercase">
-
-                                <div className="hover:text-red-500">
+                            <div>
+                                <span className="font-bold sm:text-xl md:text-lg lg:text-2xl uppercase hover:text-red-500">
                                     1.3521° N
                                     103.82° E
-                                </div>
-                                <div className="sm:text-md md:text-lg lg:text-xl hover:text-white">Singapore
-                                </div>
+                                </span>
+                            </div>
+                            <div>
+                                <span className="font-bold sm:text-md md:text-lg lg:text-xl uppercase hover:text-white">
+                                    Singapore
+                                </span>
                             </div>
                         </div>
                         <div className="col-span-2 sm:col-span-1">
@@ -57,31 +67,6 @@ const Footer = () => {
 
                     </div>
                 </div>
-                {/* <div className="sm:col-span-2 md:col-span-1 sm:text-xs md:text-sm lg:text-md uppercase tracking-tight">
-                    Location
-                    <div className="font-bold sm:text-xl md:text-2xl lg:text-3xl uppercase">
-
-                        <div>
-                            1.3521° N <br />
-                            103.82° E
-                        </div>
-                        <div className="sm:text-md md:text-lg lg:text-xl">Singapore
-                        </div>
-                    </div>
-                </div>
-                <div className="sm:grid-cols-1 grid sm:text-xs md:text-sm lg:text-md uppercase tracking-tight">
-                    <div>
-                        © 2023 Keith Ong. <br />
-                        All Rights Reserved.
-                    </div>
-                    <div>
-                        Designed and Developed
-                        <br /> by Keith Ong
-                    </div>
-                    <div>
-                        Version 1.1
-                    </div>
-                </div> */}
             </div>
 
 
