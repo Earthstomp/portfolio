@@ -28,7 +28,7 @@ const Home = async () => {
         {/* <div className="col-span-2 rounded mr-8 bg-gradient-to-b from-cyan-700"> 
         </div> */}
         <div className="col-span-12">
-          <div className="sm: w-full md:w-5/6 lg:w-2/3">
+          <div className="sm: w-full md:w-5/6 lg:w-2/3" >
             <div className="sm:text-4xl md:text-5xl lg:text-6xl font-bold">
               I'm Keith, a passionate developer and aspiring entrepreneur
             </div>
@@ -41,7 +41,7 @@ const Home = async () => {
           </div>
 
           <div>
-            <div className="pt-20 font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+            <div className="pt-20 font-bold sm:text-xl md:text-2xl lg:text-3xl">
               Some of my recent work
             </div>
             <div className="pt-4 gap-8 md:gap-12 grid grid-cols-1 sm:grid-cols-2">
