@@ -1,36 +1,23 @@
 import { NextComponentType } from "next"
 import Link from "next/link"
-import { PortfolioLinkProps } from "./PortfolioLink"
 import { PortfolioLink } from "./PortfolioLink"
 
-export type FooterProps = {
-    PortfolioLink: React.ComponentType<PortfolioLinkProps>
-}
-
-const Footer = ({ PortfolioLink }: FooterProps) => {
+const Footer = () => {
     return (
         <footer className="pt-20 text-gray-500">
             <div className="grid sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-8">
                 <div className="footer-title">
                     Social
                     <div>
-                        {/* <PortfolioLink label="Linkedin" link="https://tinyurl.com/linkedin-keith" /> */}
-                        <a className="hover-cyan font-bold sm:text-md md:text-md lg:text-xl " href="https://tinyurl.com/linkedin-keith">
-                            Linkedin
-                        </a>
+                        <PortfolioLink label="Linkedin" link="https://tinyurl.com/linkedin-keith" />
                         <br />
-
-                        <a className="hover-cyan font-bold sm:text-md md:text-md lg:text-xl" href="https://github.com/Earthstomp">
-                            Github
-                        </a>
+                        <PortfolioLink label="Github" link="https://github.com/Earthstomp" />
                     </div>
                 </div>
                 <div className="col-span-2 footer-title">
                     Email
                     <div className="sm:text-md md:text-md lg:text-xl">
-                        <a className="hover-cyan font-bold" href="mailto:keithong100@gmail.com">
-                            keithong100@gmail.com
-                        </a>
+                        <PortfolioLink label="keithong100@gmail.com" link="mailto:keithong100@gmail.com" />
                     </div>
                 </div>
                 <div className="col-span-3">

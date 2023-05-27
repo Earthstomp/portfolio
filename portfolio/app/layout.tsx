@@ -10,7 +10,6 @@ const poppins = Poppins({
   weight: ['400', '700'],
   subsets: ['latin'],
 })
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   keywords:

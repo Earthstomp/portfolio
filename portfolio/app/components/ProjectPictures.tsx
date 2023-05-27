@@ -14,9 +14,9 @@ const ProjectPictures = ({ projectId }: ProjectPicturesProps) => {
     const images = fs.readdirSync(dir);
 
     return (
-        <div>
+        <div className="">
             {images.map(image =>
-                <div className="relative h-40">
+                <div className="relative rounded-md my-8 h-80 md:h-120 lg:h-160 overflow-hidden">
                     <Image
                         key={image}
                         src={`/${projectId}/${image}`}
@@ -25,7 +25,6 @@ const ProjectPictures = ({ projectId }: ProjectPicturesProps) => {
                         style={{ objectFit: 'cover', objectPosition: 'top' }}
                     />
                 </div>
-
             )}
         </div>
     )
