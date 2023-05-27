@@ -27,15 +27,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
             <div className="pt-4 sm:text-sm md:text-md lg:text-lg uppercase font-semibold text-gray-500">
                 {project.label}
             </div>
-            <Link href='/projects/[project.id]' as={`projects/${project.id}`} className="pt-1 sm:text-2xl md:text-3xl lg:text-4xl font-bold group-hover: hover-cyan">
+            <Link href='/projects/[project.id]' as={`projects/${project.id}`} className="pt-1 sm:text-xl md:text-2xl lg:text-3xl font-bold group-hover: hover-cyan">
                 {project.shortDesc}
             </Link>
 
 
         </div>
-        // </div >
-
-
     );
 };
 

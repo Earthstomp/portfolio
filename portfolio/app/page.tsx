@@ -41,7 +41,7 @@ const Home = async () => {
           </div>
 
           <div>
-            <div className="pt-20 font-bold sm:text-xl md:text-2xl lg:text-3xl">
+            <div className="pt-20 font-bold sm:text-lg md:text-xl lg:text-2sxl">
               Some of my recent work
             </div>
             <div className="pt-4 gap-8 md:gap-12 grid grid-cols-1 sm:grid-cols-2">

@@ -2,6 +2,9 @@ import { projectDetailData } from "@/app/data/data";
 import { data } from "autoprefixer";
 import RepoCard from "../../components/RepoCard";
 
+import { ProjectPicturesProps } from "@/app/components/ProjectPictures";
+import ProjectPictures from "@/app/components/ProjectPictures";
+
 export const metadata = {
     title: 'Project | Keith',
 }
@@ -27,6 +30,9 @@ const ProjectPage = ({ params: { name } }: any) => {
                 </div>
                 <div className="sm:w-full md:w-5/6 lg:w-5/6">
                     <RepoCard repoName={github} />
+                </div>
+                <div>
+                    <ProjectPictures projectId={project?.id} />
                 </div>
             </div>
 
