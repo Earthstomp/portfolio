@@ -13,7 +13,7 @@ type Project = {
 
 const ProjectCard = ({ project }: { project: Project }) => {
 
-    const imagePath = `/${project.label}/home.png`;
+    const imagePath = `/${project.id}/home.png`;
     return (
         <div className="group">
             <div className="rounded-md relative h-[300px] sm:h-[184px] md:h-[256px] lg:h-[300px] xl:h-[332px] overflow-hidden">
