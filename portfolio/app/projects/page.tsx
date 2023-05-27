@@ -1,6 +1,10 @@
 import { projectDetailData } from "../data/data";
 import ProjectCard from "../components/ProjectCard";
 
+export const metadata = {
+    title: 'Projects | Keith',
+}
+
 const ProjectPage = () => {
     return (
         <>
@@ -8,7 +12,7 @@ const ProjectPage = () => {
                 Projects
             </div>
 
-            <div className="pt-8 gap-4 grid sm:grid-cols-1 md:grid-cols-2">
+            <div className="pt-8 gap-12 lg:gap-16 grid sm:grid-cols-1 md:grid-cols-2">
                 {projectDetailData.map(project =>
                     <ProjectCard project={project} />
                 )}

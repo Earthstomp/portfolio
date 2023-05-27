@@ -2,6 +2,10 @@ import { projectDetailData } from "@/app/data/data";
 import { data } from "autoprefixer";
 import RepoCard from "../../components/RepoCard";
 
+export const metadata = {
+    title: 'Project | Keith',
+}
+
 const ProjectPage = ({ params: { name } }: any) => {
 
     // how do we be sure that this is defined? 

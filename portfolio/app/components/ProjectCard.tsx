@@ -15,25 +15,26 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
     const imagePath = `/${project.label}/home.png`;
     return (
-        <div className="w-full">
-            <div className="sm:text-sm md:text-md lg:text-lg uppercase font-semibold text-gray-500">
-                {project.label}
-            </div>
-            <Link href='/projects/[project.id]' as={`projects/${project.id}`} className="pt-1 sm:text-2xl md:text-3xl lg:text-4xl font-bold hover: hover-cyan">
-                {project.shortDesc}
-            </Link>
-            <div className="relative h-80 sm:h-[450px] lg:h-[600px] overflow-hidden">
+        <div className="group">
+            <div className="rounded-md relative h-[300px] sm:h-[184px] md:h-[256px] lg:h-[300px] xl:h-[332px] overflow-hidden">
                 <Image
                     src={imagePath}
-                    alt="cannot load"
-                    // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    alt="Unable to load image"
                     fill
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'cover', objectPosition: 'top' }}
                 />
             </div>
+            <div className="pt-4 sm:text-sm md:text-md lg:text-lg uppercase font-semibold text-gray-500">
+                {project.label}
+            </div>
+            <Link href='/projects/[project.id]' as={`projects/${project.id}`} className="pt-1 sm:text-2xl md:text-3xl lg:text-4xl font-bold group-hover: hover-cyan">
+                {project.shortDesc}
+            </Link>
 
 
         </div>
+        // </div >
+
 
     );
 };

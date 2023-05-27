@@ -4,6 +4,10 @@ import Link from "next/link";
 import { projectDetailData } from './data/data';
 import ProjectCard from './components/ProjectCard';
 
+export const metadata = {
+  title: 'Keith, Software Developer',
+}
+
 const poppins = Poppins({
   weight: ['400', '700'],
   subsets: ['latin'],
@@ -21,15 +25,15 @@ const Home = async () => {
   return (
     <main>
       <section className="grid grid-cols-12">
-        <div className="col-span-2 rounded mr-8 bg-gradient-to-b from-cyan-700">  {/* to-red-500 */}
-        </div>
-        <div className="col-span-10">
+        {/* <div className="col-span-2 rounded mr-8 bg-gradient-to-b from-cyan-700"> 
+        </div> */}
+        <div className="col-span-12">
           <div className="sm: w-full md:w-5/6 lg:w-2/3">
             <div className="sm:text-4xl md:text-5xl lg:text-6xl font-bold">
               I'm Keith, a passionate developer and aspiring entrepreneur
             </div>
             <div className="pt-8 sm:text-md md:text-lg lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque culpa corporis unde quis recusandae quaerat ad molestiae rem fugit? Eum exercitationem facere quod similique at illo soluta, excepturi ullam non.
+              As a dedicated software engineer, I harness my skills and expertise to craft efficient and elegant solutions that empower businesses and make a positive impact in the digital realm.
             </div>
             <div className="pt-4">
               <Link className="sm:text-sm md:text-md lg:text-lg hover-cyan" href="/about">More about me</Link>
@@ -37,17 +41,17 @@ const Home = async () => {
           </div>
 
           <div>
-            <div className="pt-20 sm:text-2xl md:text-3xl lg:text-4xl font-medium">
+            <div className="pt-20 font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               Some of my recent work
             </div>
-            <div className="pt-4 gap-8 grid sm:grid-cols-1 md:grid-cols-2">
+            <div className="pt-4 gap-8 md:gap-12 grid grid-cols-1 sm:grid-cols-2">
               {projectDetailData.slice(0, MAX_PROJECTS).map(project =>
                 <ProjectCard project={project} />
               )}
             </div>
             <div className="pt-4">
               <Link className="sm:text-sm md:text-md lg:text-lg hover-cyan" href="/projects">
-                View Projects
+                View All Projects
               </Link>
             </div>
           </div>

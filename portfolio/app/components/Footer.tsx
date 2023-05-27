@@ -9,7 +9,7 @@ export type FooterProps = {
 
 const Footer = ({ PortfolioLink }: FooterProps) => {
     return (
-        <footer className="pt-20 px-16 text-gray-500">
+        <footer className="pt-20 text-gray-500">
             <div className="grid sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 gap-8">
                 <div className="footer-title">
                     Social
