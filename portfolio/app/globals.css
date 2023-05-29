@@ -88,24 +88,16 @@ body {
   }
 }
 
-/* @keyframes cursorAnim4 {
-  0% {
-    opacity: 100;
-  }
-  50% {
-    opacity: 50;
-  }
-  100% {
-      opacity: 0;
-  }
-} */
-
 .expand {
   animation: cursorAnim3 .5s forwards;
   border: 3px solid cyan;
 }
 
-/* .move {
-  animation: cursorAnim4 .5s forwards;
-  border: 3px solid cyan;
-} */
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: cyan;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}

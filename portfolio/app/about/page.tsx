@@ -6,10 +6,13 @@ export const metadata = {
 }
 
 export default function Home() {
+
+  const skills = ["React", "Django", "NextJS", "NodeJS", "Java", "Python", "Solidity", "MongoDB", "SQL", "Tailwind"];
+
   return (
     <>
       <div className="">
-        <div className="sm:text-4xl md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl font-bold">
+        <div className="sm:text-4xl md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl font-bold sm: w-full md:w-3/4 lg:w-3/4">
           A developer, minimalist, tennis player & tech enthusiast.
         </div>
         <div className="pt-8 sm:text-md md:text-lg lg:text-xl">
@@ -18,6 +21,13 @@ export default function Home() {
           I am enthusiastic about growing my skills in technology and I have interned at three start-ups. I am dedicated to continuous learning and have been recognized as a finalist in over four competitions. Learn more about my experiences by visiting my <Link href="https://tinyurl.com/linkedin-keith" className="hover-cyan underline cyan-500">Linkedin</Link> profile.
           <br /><br />
           In my spare time, I hunt for good food and travel around the world. I also work as a a professional tennis coach and hitting partner.
+        </div>
+        <div className="pt-12 sm:text-sm md:text-md lg:text-lg uppercase text-cyan-500 tracking-tight">
+          <span className="pr-2">Skills:</span>
+
+          <span>{skills.map(tech => <span className="px-2" key={tech}> {tech} </span>)
+          }</span>
+
         </div>
       </div>
 
