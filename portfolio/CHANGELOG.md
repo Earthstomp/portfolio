@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/Earthstomp/portfolio/compare/v0.1.8...v0.1.9) (2023-05-29)
+
+
+### Features
+
+* create about page and adjusted image responsiveness ([f3b35fd](https://github.com/Earthstomp/portfolio/commit/f3b35fd2174634d17e8f0e3a5aa159485896dcf5))
+
+
+### Bug Fixes
+
+* fix PortfolioLink component and replace successful ([1c25430](https://github.com/Earthstomp/portfolio/commit/1c254304d22c824999f57169b954fa0f12d6121f))
+
 ### [0.1.8](https://github.com/Earthstomp/portfolio/compare/v0.1.7...v0.1.8) (2023-05-27)
 
 ### [0.1.7](https://github.com/Earthstomp/portfolio/compare/v0.1.6...v0.1.7) (2023-05-25)
