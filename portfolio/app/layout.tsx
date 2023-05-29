@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={poppins.className}>
         <Header />
         <main className='text-gray-200 flex justify-center'>
-          <div className="sm:w-full md:w-5/6 lg:w-2/3">
+          <div className="w-5/6 sm:w-5/6 md:w-5/6 lg:w-5/6 xl:w-2/3">
             {children}
             <Footer />
           </div>

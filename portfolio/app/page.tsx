@@ -43,7 +43,7 @@ const Home = async () => {
               <div className="pt-20 font-bold sm:text-lg md:text-xl lg:text-2xl">
                 Some of my recent work
               </div>
-              <div className="pt-4 gap-8 md:gap-12 grid grid-cols-1 sm:grid-cols-2">
+              <div className="pt-4 gap-8 md:gap-12 xl:gap-20 grid grid-cols-1 sm:grid-cols-2">
                 {projectDetailData.slice(0, MAX_PROJECTS).map(project =>
                   <ProjectCard project={project} />
                 )}
