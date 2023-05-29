@@ -16,7 +16,7 @@ const ProjectPictures = ({ projectId }: ProjectPicturesProps) => {
     return (
         <div className="">
             {images.map(image =>
-                <div className="relative rounded-md my-8 h-80 md:h-120 lg:h-160 overflow-hidden">
+                <div className="relative rounded-md my-8 h-80 md:h-[120px] lg:h-[160px] overflow-hidden">
                     <Image
                         key={image}
                         src={`/${projectId}/${image}`}

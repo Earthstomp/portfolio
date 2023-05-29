@@ -8,7 +8,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="sm: w-full md:w-5/6 lg:w-2/3">
+      <div className="sm:w-full md:w-5/6 lg:w-2/3">
         <div className="sm:text-4xl md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl font-bold">
           A developer, minimalist, tennis player & tech enthusiast.
         </div>

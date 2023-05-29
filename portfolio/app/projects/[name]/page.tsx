@@ -2,7 +2,7 @@ import { projectDetailData } from "@/app/data/data";
 import { data } from "autoprefixer";
 import RepoCard from "../../components/RepoCard";
 
-import { ProjectPicturesProps } from "@/app/components/ProjectPictures";
+// import { ProjectPicturesProps } from "@/app/components/ProjectPictures";
 import ProjectPictures from "@/app/components/ProjectPictures";
 
 export const metadata = {

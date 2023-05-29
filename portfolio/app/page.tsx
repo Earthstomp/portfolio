@@ -23,12 +23,13 @@ const Home = async () => {
 
   await delay();
   return (
-    <main>
-      <section className="grid grid-cols-12">
-        {/* <div className="col-span-2 rounded mr-8 bg-gradient-to-b from-cyan-700"> 
+    <>
+      <div className="" >
+
+        <section className="grid grid-cols-12">
+          {/* <div className="col-span-2 rounded mr-8 bg-gradient-to-b from-cyan-700"> 
         </div> */}
-        <div className="col-span-12">
-          <div className="sm: w-full md:w-5/6 lg:w-2/3" >
+          <div className="col-span-12">
             <div className="sm:text-4xl md:text-5xl lg:text-6xl font-bold">
               I'm Keith, a passionate developer and aspiring entrepreneur
             </div>
@@ -38,32 +39,31 @@ const Home = async () => {
             <div className="pt-4">
               <Link className="sm:text-sm md:text-md lg:text-lg hover-cyan" href="/about">More about me</Link>
             </div>
+            <div>
+              <div className="pt-20 font-bold sm:text-lg md:text-xl lg:text-2xl">
+                Some of my recent work
+              </div>
+              <div className="pt-4 gap-8 md:gap-12 grid grid-cols-1 sm:grid-cols-2">
+                {projectDetailData.slice(0, MAX_PROJECTS).map(project =>
+                  <ProjectCard project={project} />
+                )}
+              </div>
+              <div className="pt-4">
+                <Link className="sm:text-sm md:text-md lg:text-lg hover-cyan" href="/projects">
+                  View All Projects
+                </Link>
+              </div>
+            </div>
+
+
+
           </div>
 
-          <div>
-            <div className="pt-20 font-bold sm:text-lg md:text-xl lg:text-2sxl">
-              Some of my recent work
-            </div>
-            <div className="pt-4 gap-8 md:gap-12 grid grid-cols-1 sm:grid-cols-2">
-              {projectDetailData.slice(0, MAX_PROJECTS).map(project =>
-                <ProjectCard project={project} />
-              )}
-            </div>
-            <div className="pt-4">
-              <Link className="sm:text-sm md:text-md lg:text-lg hover-cyan" href="/projects">
-                View All Projects
-              </Link>
-            </div>
-          </div>
 
 
-
-        </div>
-
-
-
-      </section>
-    </main>
+        </section>
+      </div>
+    </>
   )
 }
 
