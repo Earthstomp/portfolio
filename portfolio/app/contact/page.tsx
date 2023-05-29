@@ -2,13 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'About | Keith',
+  title: 'Contact | Keith',
 };
 
-export default function Home() {
+export default function Contact() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="bg-white w-50 h-50"></div>
+    <div className="sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+      Contact
     </div>
   );
 }
