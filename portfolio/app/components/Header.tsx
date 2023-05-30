@@ -5,7 +5,7 @@ const Header = () => {
         <header className="header">
             <main className="px-8">
                 <div>
-                    <nav className="py-14 mb-12 flex justify-between dark:text-white">
+                    <nav className="py-14 mb-12 flex justify-between text-white">
                         <h1 className="text-xl">
                             <Link href="/">keithbuilds</Link>
                         </h1>
