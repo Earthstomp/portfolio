@@ -25,15 +25,15 @@ const ProjectPictures = ({ projectId }: ProjectPicturesProps) => {
                 //     // style={{ objectFit: 'cover', objectPosition: 'top' }}
                 //     />
                 // </div>
-                <div className="relative rounded-md my-8 h-80 sm:h-[100vh] overflow-hidden">
-                    <Image
-                        key={image}
-                        src={`/${projectId}/${image}`}
-                        alt="Unable to load image"
-                        fill
-                        style={{ objectFit: 'cover', objectPosition: 'top' }}
-                    />
-                </div>
+                    // <div className="relative rounded-md my-8 h-80 sm:h-[100vh] overflow-hidden">
+                    //     <Image
+                    //         key={image}
+                    //         src={`/${projectId}/${image}`}
+                    //         alt="Unable to load image"
+                    //         fill
+                    //         style={{ objectFit: 'cover', objectPosition: 'top' }}
+                    //     />
+                    // </div>
             )}
         </div>
     )

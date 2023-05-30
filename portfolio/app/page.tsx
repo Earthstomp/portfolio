@@ -44,9 +44,9 @@ const Home = async () => {
                 Some of my recent work
               </div>
               <div className="pt-4 gap-8 md:gap-12 xl:gap-20 grid grid-cols-1 sm:grid-cols-2">
-                {projectDetailData.slice(0, MAX_PROJECTS).map(project =>
+                {/* {projectDetailData.slice(0, MAX_PROJECTS).map(project =>
                   <ProjectCard project={project} />
-                )}
+                )} */}
               </div>
               <div className="pt-4">
                 <Link className="sm:text-sm md:text-md lg:text-lg hover-cyan" href="/projects">

@@ -16,6 +16,7 @@ type RepoCardProps = {
 }
 
 async function getStaticProps(name: string | undefined): Promise<RepoCardProps> {
+    'use server'
     const response = await fetch(
         `https://api.github.com/repos/Earthstomp/${name}`,
         {
