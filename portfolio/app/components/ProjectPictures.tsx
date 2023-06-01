@@ -10,31 +10,33 @@ export type ProjectPicturesProps = {
 const ProjectPictures = ({ projectId }: ProjectPicturesProps) => {
     // const dir = `/${projectId}`;
 
-    // const dir = path.resolve('./public', projectId);
-    // const images = fs.readdirSync(dir);
+    const dir = path.resolve('./public', projectId);
+    const images = fs.readdirSync(dir);
 
     return (
         <div className="">
-            {/* {images.map(image =>
-                // <div className="relative rounded-md my-8 h-80 sm:h-full md:h-[120px] lg:h-[300px] overflow-hidden">
+            {images.map(image =>
+                // <div className="rounded-md my-8 h-80 sm:h-[100vh] overflow-hidden">
                 //     <Image
                 //         key={image}
                 //         src={`/${projectId}/${image}`}
                 //         alt="Unable to load image"
                 //         fill
-                //     // style={{ objectFit: 'cover', objectPosition: 'top' }}
+                //         style={{ objectFit: 'cover', objectPosition: 'top' }}
                 //     />
                 // </div>
-                <div className="relative rounded-md my-8 h-80 sm:h-[100vh] overflow-hidden">
+                <div className="rounded-md my-8 overflow-hidden">
                     <Image
                         key={image}
                         src={`/${projectId}/${image}`}
-                        alt="Unable to load image"
-                        fill
-                        style={{ objectFit: 'cover', objectPosition: 'top' }}
+                        alt={`/${projectId}/${image}`}
+                        height={2000}
+                        width={2000}
+                    // fill // to take size of container
+                    // style={{ objectFit: 'cover', objectPosition: 'top' }} // to keep ratio
                     />
                 </div>
-            )} */}
+            )}
         </div>
     )
 }
