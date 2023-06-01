@@ -16,16 +16,7 @@ const ProjectPictures = ({ projectId }: ProjectPicturesProps) => {
     return (
         <div className="">
             {images.map(image =>
-                // <div className="rounded-md my-8 h-80 sm:h-[100vh] overflow-hidden">
-                //     <Image
-                //         key={image}
-                //         src={`/${projectId}/${image}`}
-                //         alt="Unable to load image"
-                //         fill
-                //         style={{ objectFit: 'cover', objectPosition: 'top' }}
-                //     />
-                // </div>
-                <div className="rounded-md my-8 overflow-hidden">
+                <div className="rounded-md my-12 overflow-hidden">
                     <Image
                         key={image}
                         src={`/${projectId}/${image}`}
