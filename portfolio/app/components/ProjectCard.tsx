@@ -16,7 +16,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
     const imagePath = `/${project.id}/home.png`;
     return (
         <div className="group">
-            <div className="rounded-md relative h-80 sm:h-[184px] md:h-[256px] lg:h-[300px] xl:h-[350px] 2xl:h-[500px] overflow-hidden">
+            <div className="rounded-md relative h-80 md:h-[256px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] 3xl:??? overflow-hidden">
                 <Image
                     src={imagePath}
                     alt="Unable to load image"
