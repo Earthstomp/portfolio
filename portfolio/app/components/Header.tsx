@@ -11,16 +11,16 @@ const Header = () => {
                         </h1>
 
                         <ul className="flex items-center sm:text-sm md:text-base lg:text-xl">
-                            <li className="px-2 hover-cyan">
+                            <li className="px-2 hover-cyan hover-translate-up">
                                 <Link href="/projects">Projects</Link>
                             </li>
-                            <li className="px-2  hover-cyan">
+                            <li className="px-2 hover-cyan hover-translate-up">
                                 <Link href="/about">About</Link>
                             </li>
-                            <li className="px-2  hover-cyan">
+                            <li className="px-2 hover-cyan hover-translate-up">
                                 <Link href="/contact">Contact</Link>
                             </li>
-                            <li className="px-2  hover-cyan">
+                            <li className="px-2 hover-cyan hover-translate-up">
                                 <a
                                     className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                                     href="#"

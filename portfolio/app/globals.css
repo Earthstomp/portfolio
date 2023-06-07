@@ -29,6 +29,10 @@ body {
   @apply text-cyan-500 transition duration-500;
 }
 
+.hover-translate-up:hover {
+  @apply -translate-y-1 transition duration-300
+}
+
 .footer-title {
   @apply sm:text-xs md:text-sm lg:text-base uppercase tracking-tight;
 }
