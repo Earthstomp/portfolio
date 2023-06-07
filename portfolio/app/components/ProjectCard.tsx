@@ -30,10 +30,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
                 </div>
 
-                <div className="pt-12 sm:text-sm md:text-md lg:text-lg uppercase font-semibold text-gray-500">
+                <div className="pt-12 text-sm md:text-md lg:text-lg uppercase font-semibold text-gray-500">
                     {project.label}
                 </div>
-                <div className="pt-1 sm:text-xl md:text-2xl lg:text-3xl font-bold hover-cyan">
+                <div className="pt-1 text-xl md:text-2xl lg:text-3xl font-bold hover-cyan">
                     {project.shortDesc}
                 </div>
             </div >

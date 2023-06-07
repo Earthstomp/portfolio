@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       {/* md:text-cyan-500 lg:text-red-500 xl:text-yellow-300 2xl:text-green-500 */}
       <div className="group relative">
-        <div className=" sm:text-4xl md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl font-bold sm:w-full md:w-7/8 2xl:w-3/4">
+        <div className="text-4xl md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl font-bold sm:w-full md:w-7/8 2xl:w-3/4">
           A developer, minimalist, tennis player & tech enthusiast.
         </div>
         <div className="grid xl:grid-cols-3 gap-8">

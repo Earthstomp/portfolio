@@ -9,7 +9,7 @@ export const metadata = {
 const ProjectPage = () => {
     return (
         <>
-            <div className="sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+            <div className="text-4xl md:text-5xl lg:text-6xl font-bold">
                 Projects
             </div>
 
