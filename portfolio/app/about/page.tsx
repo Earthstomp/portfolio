@@ -13,8 +13,9 @@ export default function Home() {
   return (
 
     <div>
-      <div>
-        <div className="md:text-cyan-500 lg:text-red-500 xl:text-yellow-300 2xl:text-green-500 sm:text-4xl md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl font-bold sm:w-full md:w-7/8 xl:w-3/4">
+      {/* md:text-cyan-500 lg:text-red-500 xl:text-yellow-300 2xl:text-green-500 */}
+      <div className="group relative">
+        <div className=" sm:text-4xl md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl font-bold sm:w-full md:w-7/8 2xl:w-3/4">
           A developer, minimalist, tennis player & tech enthusiast.
         </div>
         <div className="grid xl:grid-cols-3 gap-8">
@@ -26,11 +27,11 @@ export default function Home() {
             In my spare time, I hunt for good food and travel around the world. I also work as a a professional tennis coach and hitting partner.
           </div>
           <div className="mt-8 grid md:grid-cols-3 md:gap-12 lg:gap-20 xl:grid-cols-1">
-            <div className="col-span-2 w-full h-80 relative group">
-              <div className="h-80 -left-6 -top-6 rounded-md">
+            <div className="col-span-2 w-full h-80 relative">
+              <div className="h-80 xl:h-200 -left-6 -top-6 rounded-md">
                 <div className="h-full relative z-20">
                   <Image
-                    className="rounded-lg object-cover grayscale-50 group-hover:grayscale-0 duration-1000 "
+                    className="rounded-lg object-cover grayscale-60 group-hover:grayscale-0 duration-500 "
                     src="/KeithSmall.jpg"
                     fill
                     alt="profile pic">
@@ -50,12 +51,6 @@ export default function Home() {
                     </span>
                     {tech}
                   </li>
-                  //    <span className="sm:text-md md:text-lg lg:text-xl">
-                  //    <span className="text-cyan-500">
-                  //      <AiFillThunderbolt />
-                  //    </span>
-                  //    {tech}
-                  //  </span>
                 )}
               </ul>
             </div>

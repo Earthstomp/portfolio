@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       grayscale: {
-        50: '50%'
+        60: '60%'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
