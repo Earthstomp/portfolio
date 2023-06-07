@@ -29,7 +29,10 @@ const ProjectPage = ({ params: { name } }: any) => {
 
                 </div>
                 <div className="sm:w-full md:w-5/6 lg:w-5/6">
-                    {/* <RepoCard repoName={github} /> */}
+                    <RepoCard repoName={github} />
+                </div>
+                <div className="pt-20 sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+                    Screenshots of my work
                 </div>
                 <ProjectPictures projectId={project?.id} />
             </div>
