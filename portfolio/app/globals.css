@@ -33,6 +33,11 @@ body {
   @apply -translate-y-1 transition duration-300
 }
 
+.hover-translate-right:hover {
+  @apply translate-x-2 transition duration-300
+}
+
+
 .footer-title {
   @apply sm:text-xs md:text-sm lg:text-base uppercase tracking-tight;
 }
