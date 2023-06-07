@@ -25,42 +25,46 @@ export default function Home() {
             <br /><br />
             In my spare time, I hunt for good food and travel around the world. I also work as a a professional tennis coach and hitting partner.
           </div>
-          {/* <div className="mt-8 grid grid-cols-2 gap-4 2xl:grid-cols-1"> */}
-          <div className="w-full h-80 relative group">
-            <div className="h-80 -left-6 -top-6 rounded-md">
-              <div className="h-full relative z-20">
-                <Image
-                  className="rounded-lg object-cover grayscale-50 group-hover:grayscale-0 duration-1000 "
-                  src="/KeithSmall.jpg"
-                  fill
-                  alt="profile pic">
-                </Image>
-              </div>
-              <div className="inline-block absolute top-5 left-5 h-full w-full border-4 border-cyan-500 rounded-lg group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300"></div>
+          <div className="mt-8 grid md:grid-cols-3 md:gap-12 lg:gap-20 xl:grid-cols-1">
+            <div className="col-span-2 w-full h-80 relative group">
+              <div className="h-80 -left-6 -top-6 rounded-md">
+                <div className="h-full relative z-20">
+                  <Image
+                    className="rounded-lg object-cover grayscale-50 group-hover:grayscale-0 duration-1000 "
+                    src="/KeithSmall.jpg"
+                    fill
+                    alt="profile pic">
+                  </Image>
+                </div>
+                <div className="inline-block absolute top-5 left-5 h-full w-full border-4 border-cyan-500 rounded-lg group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300"></div>
 
+              </div>
             </div>
-          </div>
-          {/* thunderbolt icons non-2xl breakpoint*/}
-          {/* <div className="2xl:hidden">
-              <div className="md:text-cyan-500 sm:text-2xl md:leading-tight md:text-3xl lg:leading-tight lg:text-6xl font-bold sm:w-full md:w-7/8 xl:w-3/4">
-                Skills </div>
+            {/* thunderbolt icons non-2xl breakpoint*/}
+            <div className="hidden md:inline xl:hidden">
               <ul className="grid grid-cols-2 gap-2">
                 {skills.map(tech =>
-                  <li className="flex items-center gap-2" key={tech}>
-                    <span className="text-cyan-500">
+                  <li className="flex items-center gap-2 sm:text-md md:text-lg lg:text-xl" key={tech}>
+                    <span className="text-cyan-500 ">
                       <AiFillThunderbolt />
                     </span>
                     {tech}
                   </li>
+                  //    <span className="sm:text-md md:text-lg lg:text-xl">
+                  //    <span className="text-cyan-500">
+                  //      <AiFillThunderbolt />
+                  //    </span>
+                  //    {tech}
+                  //  </span>
                 )}
               </ul>
-            </div> */}
+            </div>
 
-          {/* </div> */}
+          </div>
 
         </div>
 
-        <div className="pt-12 sm:text-sm md:text-md lg:text-lg uppercase text-cyan-500 tracking-tight">
+        <div className="md:hidden xl:inline-flex pt-12 sm:text-sm md:text-md lg:text-lg uppercase text-cyan-500 tracking-tight">
           <span className="pr-2">Skills:</span>
 
           <span>{skills.map(tech => <span className="px-2" key={tech}> {tech} </span>)
