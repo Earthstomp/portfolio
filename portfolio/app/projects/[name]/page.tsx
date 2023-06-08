@@ -1,8 +1,5 @@
 import { projectDetailData } from "@/app/data/data";
-import { data } from "autoprefixer";
-import RepoCard from "../../components/RepoCard";
-
-// import { ProjectPicturesProps } from "@/app/components/ProjectPictures";
+import RepoCard from "@/app/components/RepoCard";
 import ProjectPictures from "@/app/components/ProjectPictures";
 
 export const metadata = {
@@ -11,7 +8,6 @@ export const metadata = {
 
 const ProjectPage = ({ params: { name } }: any) => {
 
-    // how do we be sure that this is defined? 
     const project = projectDetailData.find(obj => obj.id === name);
     const github = project?.github;
 
@@ -29,6 +25,7 @@ const ProjectPage = ({ params: { name } }: any) => {
 
                 </div>
                 <div className="sm:w-full md:w-5/6 lg:w-5/6">
+                    {/* @ts-expect-error Server Component */}
                     <RepoCard repoName={github} />
                 </div>
                 <div className="pt-20 text-3xl md:text-4xl lg:text-5xl font-bold">

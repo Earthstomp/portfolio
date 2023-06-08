@@ -15,21 +15,30 @@ type RepoCardProps = {
     link: string,
 }
 
-async function getStaticProps(name: string | undefined): Promise<RepoCardProps> {
-    const response = await fetch(
-        `https://api.github.com/repos/Earthstomp/${name}`,
-        {
-            next: {
-                revalidate: 60,
-            },
-        }
-    );
-    const repo: RepoCardProps = await response.json();
-    return repo;
+// async function getStaticProps(name: string | undefined): Promise<RepoCardProps> {
+//     const response = await fetch(
+//         `https://api.github.com/repos/Earthstomp/${name}`,
+//         {
+//             next: {
+//                 revalidate: 60,
+//             },
+//         }
+//     );
+//     const repo: RepoCardProps = await response.json();
+//     return repo;
+// }
+
+async function getRepo(name: string | undefined) {
+    const res = await fetch(`https://api.github.com/repos/Earthstomp/${name}`)
+    return res.json();
 }
 
-async function RepoCard({ repoName }: { repoName: string | undefined }) {
-    const repo: RepoCardProps = await getStaticProps(repoName);
+
+export default async function RepoCard({ repoName }: { repoName: string | undefined }) {
+    // const repo: RepoCardProps = await getStaticProps(repoName);
+
+    const repoData: Promise<RepoCardProps> = getRepo(repoName);
+    const repo = await repoData;
 
     return (
         <div className="my-8 p-4 rounded bg-white  hover:translate-y-2 transition duration-200">
@@ -51,4 +60,3 @@ async function RepoCard({ repoName }: { repoName: string | undefined }) {
         </div>
     );
 };
-export default RepoCard;
