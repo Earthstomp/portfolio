@@ -15,7 +15,9 @@ const ProjectPage = () => {
 
             <div className="pt-8 gap-28 grid sm:grid-cols-1 md:grid-cols-2">
                 {projectDetailData.map((project, index) =>
-                    <ProjectCard project={project} />
+                    <div key="index">
+                        <ProjectCard project={project} />
+                    </div>
                 )}
             </div>
         </>

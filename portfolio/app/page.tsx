@@ -51,7 +51,9 @@ const Home = async () => {
               </div>
               <div className="pt-4 gap-8 md:gap-12 2xl:gap-20 grid grid-cols-1 md:grid-cols-2">
                 {projectDetailData.slice(0, MAX_PROJECTS).map((project, index) =>
-                  <ProjectCard project={project} />
+                  <div key="index">
+                    <ProjectCard project={project} />
+                  </div>
                 )}
               </div>
               <div className="pt-4">
