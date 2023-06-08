@@ -13,7 +13,7 @@ type Project = {
 
 const ProjectCard = ({ project }: { project: Project }) => {
 
-    const imagePath = `/${project.id}/home.png`;
+    const imagePath = `/${project.id}/1home.png`;
     return (
         <Link href='/projects/[project.id]' as={`projects/${project.id}`} className="pt-1 sm:text-xl md:text-2xl lg:text-3xl font-bold  hover-cyan">
             <div className="group relative">

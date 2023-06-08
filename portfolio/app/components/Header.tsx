@@ -6,7 +6,7 @@ const Header = () => {
             <main className="px-8">
                 <div>
                     <nav className="py-14 mb-12 flex justify-between text-white">
-                        <h1 className="text-xl">
+                        <h1 className="text-xl hover-cyan">
                             <Link href="/">keithbuilds</Link>
                         </h1>
 
