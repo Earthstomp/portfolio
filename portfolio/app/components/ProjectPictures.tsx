@@ -3,7 +3,7 @@ import path from "path";
 import Image from "next/image";
 
 export type ProjectPicturesProps = {
-    projectId: string | undefined// is this correct?
+    projectId: string // is this correct?
 }
 
 
