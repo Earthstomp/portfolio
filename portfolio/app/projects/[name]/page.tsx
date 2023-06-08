@@ -9,7 +9,12 @@ export const metadata = {
 const ProjectPage = ({ params: { name } }: any) => {
 
     const project = projectDetailData.find(obj => obj.id === name);
-    const github = project?.github;
+
+    if (!project) {
+        return null;
+    }
+
+    const github = project.github;
 
     return (
         <div className="text-left">
@@ -31,12 +36,8 @@ const ProjectPage = ({ params: { name } }: any) => {
                 <div className="pt-20 text-3xl md:text-4xl lg:text-5xl font-bold">
                     Screenshots of my work
                 </div>
-                <ProjectPictures projectId={project?.id} />
+                <ProjectPictures projectId={project.id} />
             </div>
-
-
-
-
         </div>
     );
 };
